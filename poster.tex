@@ -1,0 +1,201 @@
+%**********************************************************************************************************************
+% Poster
+%**********************************************************************************************************************
+
+\documentclass[a0, portrait, final]{a0poster}
+\usepackage[utf8]{inputenc}
+\usepackage{epsfig}
+\usepackage{multicol}
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[all]{xy}
+\usepackage{here}
+\usepackage[percent]{overpic}
+\usepackage{mathrsfs}
+\usepackage{enumerate}
+\usepackage{indentfirst}
+\usepackage[dvips]{color}
+\usepackage{setspace}
+\usepackage[portuguese]{babel}
+\geometry{paperwidth=830mm, paperheight=1100mm,
+          %textwidth=800mm, textheight=1070mm,
+          top=30mm, bottom=30mm,
+          left=30mm, right=30mm}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{2cm}
+%\bibliographystyle{plain}
+
+% NEW COMMANDS ****************************************************************************************************************
+
+\def\dis{\displaystyle}
+
+\newcommand{\pups}[3][-1pt]{{}^{#2}\hspace{#1}#3}
+
+\newcommand{\aspasleft}{\textquotedblleft}
+\newcommand{\aspasright}{\textquotedblright}
+
+\newcommand{\om}{\omega}
+\newcommand{\Om}{\Omega}
+
+
+% ENVIRONMENTS ****************************************************************************************************************
+
+\newtheorem{defi}{Definition}[section]
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{rmk}{Remark}[section]
+\newtheorem{ex}{Example}[section]
+
+% BODY POSTER ****************************************************************************************************************
+
+\begin{document}
+\noindent \rule{\textwidth}{6pt}
+
+\vspace{1.0cm}
+
+\begin{minipage}[t]{0.98\linewidth}
+  \begin{minipage}[t]{0.16\linewidth}
+  \begin{center}
+		\includegraphics[scale=1.3]{unirio.eps}
+    %{\sffamily Universidade Federal do}\\
+    %{\sffamily Estado do Rio de Janeiro}
+  \end{center}
+  \end{minipage}
+  \begin{minipage}[b]{0.67\linewidth}
+    \begin{center}
+      {\Huge \bfseries Monitoria de Projeto e Construção de Sistemas}\\[12mm]
+      {\Large Lucas Guilherme de Azevedo\textsuperscript{1}, Gabriella da Silva de Souza\textsuperscript{2}, Juliana Costa Fernandes\textsuperscript{2}, Rodrigo Ribeiro Silva\textsuperscript{2}, Rodrigo Pereira dos Santos\textsuperscript{3}} \\[6mm]
+			{\large \textsuperscript{1}Monitor de Projeto e Construção de Sistemas, \textsuperscript{2}Monitor Voluntário de Projeto e Construção de Sistemas, \textsuperscript{3}Orientador de Projeto e Construção de Sistemas} \\
+		\end{center}
+  \end{minipage}
+  \begin{minipage}[t]{0.16\linewidth}
+    \begin{center} 
+		\includegraphics[scale=0.8]{java.eps}
+    \end{center}
+  \end{minipage}
+\end{minipage}
+
+\vspace{1.0cm}
+
+\noindent \rule{\textwidth}{4pt}
+
+\vspace{1.5cm}
+
+\begin{multicols}{3}
+
+\section{Introdução}
+\begin{spacing}{3.0}
+{\large A disciplina de Projeto e Construção de Sistemas (PCS) propicia aos alunos experimentarem, na forma de um projeto, o ciclo de vida de um sistema de informação de complexidade razoável com a liberdade de escolherem as tecnologias utilizadas. Como o uso de Python, Java e C# para a programação do software e XML ou MySQL para persistir dados. 
+\\ Esta disciplina possui extrema relevância, na medida em que consolida e aplica os conceitos avançados de programação de computadores e os une ao processo de criar a documentação necessária para um sistema complexo, ambos aprendidos em disciplinas anteriores. Isso acontece através da construção de um sistema de maior complexidade do que os já experimentados pelos alunos no ambiente acadêmico.}
+\end{spacing}
+
+\section{Objetivos}
+\begin{spacing}{3.0}
+{\large O trabalho de monitoria tem como objetivo auxiliar o professor no processo de transmissão e aplicação dos conhecimentos de desenvolvimento de sistemas na disciplina de PCS. Nesse sentido, o monitor funciona como um colaborador no processo ensino-aprendizagem, através do suporte e auxílio aos alunos; não apenas na sala de aula, mas também em horários extraclasse. Além disso, o monitor tem a oportunidade de iniciar sua trajetória acadêmica, de modo que possa vivenciar a docência e a pesquisa durante o desenvolvimento de atividades da disciplina junto com o professor. }
+\end{spacing}
+
+\section{Metodologia}
+\begin{spacing}{3.0}
+{\large A metodologia utilizada foi de aulas semanais, divididas em teóricas (ou expositivas) e práticas. As expositivas são guiadas pela contextualização de aplicação dos conteúdos aos projetos e também conhecimentos importantes para a manutenção e a expansão de futuros projetos a partir das fases de desenvolvimento de um software. As aulas práticas, por sua vez, funcionam como sedimentação do conhecimento e suporte do professor/monitor aos projetos.
+\\ Nesse contexto, as principais atividades realizadas pelo monitor são:
+}
+\end{spacing}
+
+\begin{spacing}{3.0}
+\begin{itemize}
+	\item {\large Atender e prestar suporte aos alunos da disciplina;}
+	\item {\large Auxiliar o professor nas aulas práticas em laboratório;}
+	\item {\large Reunir-se semanalmente com o professor a fim de se definir e avaliar o cumprimento das tarefas;}
+	\item {\large Confeccionar exercícios para os alunos, corrigir trabalhos práticos, selecionar material bibliográfico e realizar relatórios da monitoria.}
+\end{itemize}
+\end{spacing}
+
+
+
+\subsection{Aprendizagem baseada em Projetos}
+\begin{center}
+	\includegraphics[scale=1.4]{ciclodevida.eps}\\
+	{\normalsize Figura 1. Etapas básicas do ciclo de vida de um projeto.}\\
+\end{center}
+\vspace{1.8cm}
+
+\begin{spacing}{3.0}
+	{\large As etapas que envolvem o ciclo de vida de um desenvolvimento de software vistas na disciplina são:}
+\end{spacing}
+
+\begin{spacing}{1.0}
+\begin{large}
+\begin{enumerate}
+	\item \textbf{Concepção: }Ideia inicial do software a ser projetado;
+	\item \textbf{Análise e Design: }Etapa de modelagem, seguindo a Linguagem de Modelagem Unificada (UML);
+	\item \textbf{Implementação: }A implementação é feita utilizando as tecnologias escolhidas pelos alunos.
+\end{enumerate}
+\end{large}
+\end{spacing}
+
+\vspace{1.5cm}
+
+\subsection{Desenvolvimento Iterativo}
+\begin{spacing}{3.0}
+\begin{center}
+	\includegraphics[scale=0.7]{iterativo.eps}\\
+	{\normalsize Figura 2. Desenvolvimento iterativo.}\\
+\end{center}
+\vspace{1.5cm}
+{\large O desenvolvimento das atividades de modelagem é feito de forma incremental. A cada semana um novo diagrama é modelado enquanto os outros são refinados, de modo a manter toda a documentação atualizada e coerente com o sistema a ser desenvolvido. Todos esses artefatos integram a etapa de Análise e Design. Com esta etapa consolidada, os alunos implementam o sistema, tendo como base a documentação produzida. Ao final, o aluno obtém o programa completo, com todas as funcionalidades implementadas e documentadas.}
+\end{spacing}
+
+\subsection{Consolidação do Conhecimento}
+\begin{spacing}{3.0}
+{\large Para consolidar os conhecimentos vistos em sala de aula, foi firmada uma parceria com a Universidade Federal do Maranhão que conta com a troca dos documentos de modelagem desenvolvidos pelos alunos em sala de aula para que sejam realizadas inspeções em tais documentos, em busca de problemas. Essas inspeções propiciam ao aluno a oportunidade de aprimoramento dos conhecimentos adquiridos, na medida em que envolvem a realização de uma avaliação criteriosa do artefato para identificar os possíveis defeitos.}
+\end{spacing}
+
+\begin{center}
+	\includegraphics[scale=0.7]{inspecao.eps}\\
+	{\normalsize Figura 3. Exemplo da tabela de inspeção criada pelos alunos.}\\
+\end{center}
+\vspace{1.0cm}
+
+\section{Conclusão}
+\begin{spacing}{3.0}
+{\large Esta disciplina é fundamental para a formação do aluno, pois através dela o estudante pode vivenciar o ciclo de vida de criação de um sistema de informação de complexidade razoável, desde a modelagem até a implementação. 
+\\ O trabalho do monitor é essencial para acompanhar o desenvolvimento dos alunos na disciplina, servindo como equipe de apoio durante as aulas (práticas e teóricas), além de horários extraclasse. Os benefícios da monitoria também se estendem ao aluno-monitor, por propiciar um ambiente de pesquisa e vivência acadêmica, permitindo uma iniciação na prática docente.
+}
+\end{spacing}
+
+\section{Referências Bibliográficas}
+\begin{spacing}{3.0}
+\begin{itemize}
+	\item {\large Pressman, Roger S.; Maxim, Bruce R.. Engenharia de Software: Uma Abordagem Profissional. 8. ed.  AMGH Editora, 2016.}
+	\item {\large Bezerra, Eduardo. Princípios de Análise e Projeto de Sistemas com UML. 3. ed. Elsevier, 2015.}
+	\item {\large Deitel, Paul; Deitel Harvey. Java - Como Programar. 10. ed. Pearson Education, 2016.}
+\end{itemize}
+\end{spacing}
+
+\end{multicols}
+
+\vspace{1.5cm}
+
+\noindent \rule{\textwidth}{4pt}
+\vspace{0.1cm}
+
+\begin{center}
+{\itshape \aspasleft Educar verdadeiramente não é ensinar fatos novos ou enumerar fórmulas prontas, mas sim preparar a mente para pensar. A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original.\aspasright}\\
+\end{center}
+
+\begin{flushright}
+{\normalsize Albert Einstein}\\
+\end{flushright}
+
+\vspace{0.1cm}
+
+\noindent \rule{\textwidth}{6pt}
+\end{document} 
